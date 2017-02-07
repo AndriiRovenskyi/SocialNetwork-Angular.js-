@@ -1,0 +1,20 @@
+
+<div class="post" ng-repeat="p in home.posts">
+    <h4>{{p.name}}<span>@{{p.log}} {{p.time}}</span></h4>
+    <p>{{p.text}}</p>
+    <button type="button" class="btn btn-default" ng-click="home.delete(p)">Delete</button><span class="wrong2"></span>
+      </div>
+    
+    
+    
+<div class="writePlace">
+    <div class="writePlace--container">
+        <form>
+            <div class="form-group">
+                <h3>Write message</h3>
+                <textarea class="form-control" rows="2" id="comment" ng-model="home.text"></textarea>
+                <button type="submit" class="btn btn-primary" ng-click="home.writePost()">SEND</button>
+            </div>
+        </form>
+    </div>
+</div>
